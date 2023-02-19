@@ -1,0 +1,426 @@
+/* 共通設定 */
+* {
+  color:#6f6f6f;
+  font-family: Arial, "游ゴシック", sans-serif;
+}
+
+.article-title-en {
+  color:#cc0066;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 1.1vw;
+  margin-bottom: 1vw;
+}
+
+.article-title-jp {
+  font-size: 1.7vw;
+  font-weight: bold;
+  margin-bottom: 2.5vw;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* headerの設定 */
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 10px 2.8%;
+}
+
+.header-logo {
+  width: 12%;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.header-nav-list {
+  display: flex;
+  list-style: none;
+  font-size: 1.2vw;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 1.75vw;
+}
+
+/* eyecatchの設定 */
+.eyecatch {
+  position: relative;
+  margin: 1.5vw auto;
+}
+
+.eyecatch-txt {
+  position: absolute;
+  top: 8%;
+  left: 21%;
+}
+
+.eyecatch-ttl-en {
+  color: #cc0066;
+  font-family: 'Indie Flower', cursive;
+  font-size: 4.4vw;
+  line-height: 180%;
+}
+
+.eyecatch-ttl-en span {
+  color: darkturquoise;
+  font-family: inherit;
+}
+
+.eyecatch-ttl-jp {
+  color: #cc0066;
+  font-size: 1.5vw;
+  font-weight: bold;
+  line-height: 180%;
+}
+
+.eyecatch-ttl-jp span {
+  color: darkturquoise;
+}
+
+.eyecatch-about {
+  font-size: 1.1vw;
+  line-height: 180%;
+}
+.eyecatch-img {
+  width: 60%;
+  margin: 0 0 0 auto;
+}
+
+.eyecatch-img img {
+  width: 100%;
+}
+
+/* newsの設定 */
+.news {
+  margin: 5.8vw 24%;
+}
+
+.news-wrapper {
+  border-top: 3px solid #c6e0d2;
+  border-bottom: 3px solid #c6e0d2;
+}
+
+.news-list {
+  margin: 1.0vw auto 2.0vw auto;
+}
+
+.news-list li {
+  list-style: none;
+  font-size: 1.2vw;
+  border-bottom: 2px solid #c6e0d2;
+}
+
+.news-list p {
+  display: inline-block;
+  margin: 2.3% 0%;
+}
+
+.news-list li p:not(:last-child) {
+  margin-right: 3%;
+}
+
+.news-list-category {
+  background-color: #cc0066;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+/* aboutの設定 */
+.about {
+  background-color: #eaeeec;
+  text-align: center;
+  padding: 3vw 16vw 3.5vw 17.2vw;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-txt {
+  width: 41%;
+  font-size: 1.1vw;
+  text-align: left;
+  line-height: 160%;
+}
+
+.about-txt p:nth-child(1) {
+  margin-bottom: 2vw;
+  width: 95%;
+}
+.about-img {
+  width: 40%;
+}
+
+.about-img > img {
+  width: 100%;
+}
+
+/* serviceの設定 */
+.service {
+  padding: 5.5vw 16vw 6vw 17.2vw;
+}
+
+.service-wrapper {
+  display: grid;
+  grid-template-rows: 13.8vw 13.8vw;
+  grid-template-columns: 1fr 1fr;
+}
+
+.service-img {
+  width: 10vw;
+  display: inline-block;
+}
+
+.service-img img {
+  width: 100%;
+}
+
+.service-content h4 {
+  color: white;
+  font-size: 1.3vw;
+  font-weight: bold;
+}
+
+.service-content p {
+  color: white;
+  font-size: 1.1vw;
+  text-align: left;
+  line-height: 150%;
+  margin-top: 1vw;
+}
+
+.service-box1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  text-align: center;
+  background-color: #cc0066;
+  padding: 2.5vw 3vw;
+}
+
+.service-box1 .service-content {
+  margin-top: 1vw;
+}
+
+.service-box2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
+  background-color: #bc5083;
+  padding: 2.2vw 0vw 0vw 1.0vw;
+}
+
+.service-box2 .service-content {
+  width: 67%;
+  margin: auto 0vw auto 1vw;
+}
+
+.service-box3 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: space-between;
+  background-color: #b3879a;
+  padding: 2.2vw 0vw 0vw 1.0vw;
+}
+
+.service-box3 .service-content {
+  width: 67%;
+  margin: auto 0vw auto 1vw;
+}
+
+/* blogの設定 */
+.blog {
+  background-color: #eaeeec;
+  padding: 3vw 16vw 3.5vw 17.2vw;
+}
+
+.blog-wrapper {
+  text-align: center;
+}
+.blog-card-area {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.blog-card {
+  position: relative;
+  width: 30%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.blog-card-img {
+  width: 100%;
+}
+
+.blog-card-img img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.blog-card-title {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: #cc0066;
+  color: white;
+  font-size: 1.1vw;
+  font-weight: normal;
+  padding: 4% 6.5%;
+  border-radius: 20px 0px 0px 0px;
+}
+
+.blog-card-tag {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-card-content {
+  padding: 7.8% 6.5%;
+  font-size: 1.1vw;
+  font-weight: bold;
+  line-height: 150%;
+  text-align: left;
+}
+
+.blog-card-tag {
+  padding: 3.9% 6.5% 9.2% 6.5%;
+  font-size: 1.1vw;
+}
+
+.blog-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 1.2vw 3vw;
+  font-size: 1.1vw;
+  color: #cc0066;
+  background-color: white;
+  border: solid 3px #cc0066;
+  border-radius: 40px;
+  margin-top: 1.8vw;
+}
+
+/* companyの設定 */
+.company {
+  padding: 5.5vw 23vw;
+}
+
+.company-table {
+  border-collapse: collapse;
+  font-size: 1.1vw;
+  width: 100%;
+}
+
+.company-table tr {
+  border-top: 2px solid #c6e0d2;
+}
+
+.company-table tr:last-child{
+  border-bottom: 2px solid #c6e0d2;
+}
+
+.company-table th {
+  text-align: left;
+  background-color: #eaeeec;
+  width: 30%;
+  border-left: 2px solid #c6e0d2;
+  border-right: 2px solid #c6e0d2;
+  padding: 1.35vw 1vw;
+}
+
+.company-table td {
+  border-right: 2px solid #c6e0d2;
+  padding-left: 1vw;
+}
+
+/* moreの設定 */
+.more {
+  margin-top: 0.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-content {
+  position: relative;
+  width: 50%;
+}
+
+.more-content img {
+  width: 100%;
+  height: 94.4%;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+
+.more-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.1vw;
+  font-weight: bold;
+}
+
+/* contactの設定 */
+.contact {
+  padding-top: 4.8vw;
+  padding-bottom: 6.3vw;
+  text-align: center;
+}
+
+.contact-txt {
+  font-size: 1.4vw;
+  font-weight: bold;
+}
+
+.vertical-bar {
+  height: 3vw;
+  width: 5px;
+  border-left: 3px solid #cc0066;
+  margin: 1.8vw auto 1.2vw 50%;
+}
+
+.mail-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 2vw 7vw;
+  font-size: 1.1vw;
+  color: white;
+  background: linear-gradient(90deg, #fd017f, #a30051);
+  box-shadow: 0 0.7vw 0 0 #7c003e;
+  border-radius: 50px;
+  position: relative;
+}
+
+.mail-btn::before {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  content: "";
+  background: url(../img/mailicon.svg);
+  background-size: cover;
+  width: 2vw;
+  height: 2vw;
+  transform: translate(-50%, -50%);
+}
+
+/* footerの設定 */
+.footer {
+  text-align: center;
+  background-color: #eaeeec;
+  font-size: 1vw;
+  padding: 1.5vw;
+}
